@@ -1,2 +1,2 @@
-# Ultra--USI-Chess-Engine
-USI chess engine written in C++
+# Ultra--UCI-Chess-Engine
+UCI chess engine written in C++
