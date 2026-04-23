@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Ultra" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="src/;include/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Ultra" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-march=corei7" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Ultra" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-std=c++17" />
+					<Add option="-m64" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Bitboard.h" />
+		<Unit filename="include/Bitboard_Masks.h" />
+		<Unit filename="include/ChessBoard.h" />
+		<Unit filename="include/Evaluation.h" />
+		<Unit filename="include/Fen.h" />
+		<Unit filename="include/HashKey.h" />
+		<Unit filename="include/IO.h" />
+		<Unit filename="include/Makemove.h" />
+		<Unit filename="include/Movegen.h" />
+		<Unit filename="include/PV_Table.h" />
+		<Unit filename="include/PeftTest.h" />
+		<Unit filename="include/Search.h" />
+		<Unit filename="include/SquareAttacked.h" />
+		<Unit filename="include/Timer.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/UCI_Protocol.h" />
+		<Unit filename="include/Validate.h" />
+		<Unit filename="include/Xoshiro256.h" />
+		<Unit filename="include/definitions.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Bitboard.cpp" />
+		<Unit filename="src/ChessBoard.cpp" />
+		<Unit filename="src/Evaluation.cpp" />
+		<Unit filename="src/Fen.cpp" />
+		<Unit filename="src/HashKey.cpp" />
+		<Unit filename="src/IO.cpp" />
+		<Unit filename="src/Makemove.cpp" />
+		<Unit filename="src/Movegen.cpp" />
+		<Unit filename="src/PV_Table.cpp" />
+		<Unit filename="src/PeftTest.cpp" />
+		<Unit filename="src/Search.cpp" />
+		<Unit filename="src/SquareAttacked.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Unit filename="src/UCI_Protocol.cpp" />
+		<Unit filename="src/Validate.cpp" />
+		<Unit filename="src/Xoshiro256.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
