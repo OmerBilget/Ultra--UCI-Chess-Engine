@@ -31,6 +31,9 @@ g++ -O3 -std=c++17 -o engine main.cpp
 ```
 
 ### Using with GUI
+
 Open a UCI-compatible GUI (e.g., CuteChess)
+
 Add the compiled engine executable
+
 Start a game or analyze positions
